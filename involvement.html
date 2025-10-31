@@ -1,0 +1,106 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About • Lauren Schnapp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --page:#fffaf7;
+      --text:#0c0c0c;
+      --mint:#a9c9b7;
+      --mint-dark:#8fb6a1;
+      --card:#91b9a5;
+      --accent:#efc1d1;
+      --accent-2:#c6e3d7;
+      --maxw:1100px;
+      --radius:26px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--page);color:var(--text);font-family:Inter,system-ui,Arial,sans-serif}
+    /* scallops */
+    .scallops{height:35px;position:relative;overflow:hidden;border-top:4px solid #8453c9;border-bottom:4px solid #8453c9}
+    .scallops::before,.scallops::after{content:"";position:absolute;left:0;right:0;height:100%;background-size:48px 48px;background-repeat:repeat-x}
+    .scallops::before{top:-18px;background-image:radial-gradient(24px 24px at 24px 24px, var(--accent) 24px, transparent 25px)}
+    .scallops::after{bottom:-18px;background-image:radial-gradient(24px 24px at 0 0, var(--accent-2) 24px, transparent 25px)}
+    /* wrapper + nav */
+    .wrap{max-width:var(--maxw);margin:24px auto;padding:0 20px}
+    nav{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin:18px 0 10px}
+    nav a{background:var(--mint);padding:12px 24px;border-radius:999px;text-decoration:none;color:#000;font-weight:800;font-family:Montserrat,sans-serif}
+    nav a:hover{background:var(--mint-dark)}
+    /* title */
+    h1{font-family:Montserrat,Inter,sans-serif;font-weight:800;font-size:clamp(36px,6vw,60px);text-align:center;margin:8px 0 20px}
+    /* story card */
+    .bio-card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:24px 26px;
+      font-weight:800;
+      line-height:1.5;
+      box-shadow:0 8px 24px rgba(0,0,0,.08), inset 0 2px 0 rgba(255,255,255,.25);
+      margin:0 auto 28px;
+      max-width:1000px;
+    }
+    /* photo row */
+    .photo-row{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:36px;
+      justify-items:center;
+      max-width:1000px;
+      margin:0 auto 40px;
+    }
+    .photo-row img{
+      width:100%;
+      max-width:330px;       /* keeps them similar size like the screenshot */
+      height:auto;
+      border-radius:16px;
+      box-shadow:0 10px 24px rgba(0,0,0,.12);
+      display:block;
+    }
+    @media (max-width:1000px){ .photo-row{gap:28px} }
+    @media (max-width:860px){
+      .photo-row{grid-template-columns:1fr; gap:22px}
+      .bio-card{font-weight:800}
+    }
+  </style>
+</head>
+<body>
+<div class="pattern-bar"></div>
+
+<nav class="nav-pills">
+  <a href="index.html" class="pill">Home</a>
+  <a href="about.html" class="pill">About Me</a>
+  <a href="involvement.html" class="pill" aria-current="page">Involvement</a>
+  <a href="experience.html" class="pill">Experience</a>
+  <a href="contact.html" class="pill">Contact Me</a>
+</nav>
+
+<h1>INVOLVEMENT</h1>
+
+<section class="card">
+  <div class="content">
+    <ul>
+      <li><strong>Microfinance Leadership Association</strong> — President</li>
+      <li><strong>The Women’s Network</strong> — VP of Finance</li>
+      <li><strong>Alpha Epsilon Phi Sorority</strong> — VP of Recruitment</li>
+      <li><strong>Badger$ense</strong> — Marketing & Outreach Coordinator</li>
+      <li><strong>Capital Management Club</strong> — Active Member</li>
+      <li><strong>Wealth Management Group</strong> — Active Member</li>
+    </ul>
+
+    <p style="text-align:center; margin-top:20px;">
+
+
+<div class="pattern-bar bottom"></div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PAGE TITLE HERE</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+</body>
+</html>

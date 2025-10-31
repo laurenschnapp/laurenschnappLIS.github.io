@@ -1,0 +1,137 @@
+<<<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About • Lauren Schnapp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+        --cream: #fdfaf8;
+      --text:#0c0c0c;
+       --sage: #8db8ab;
+      --sage-2: #9fbdb1;
+      --card:#91b9a5;
+      --accent:#efc1d1;
+      --accent-2:#c6e3d7;
+      --maxw:1100px;
+      --radius:26px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--page);color:var(--text);font-family: "Georgia", serif;
+    /* scallops */
+    .scallops{height:35px;position:relative;overflow:hidden;border-top:4px solid #8453c9;border-bottom:4px solid #8453c9}
+    .scallops::before,.scallops::after{content:"";position:absolute;left:0;right:0;height:100%;background-size:48px 48px;background-repeat:repeat-x}
+    .scallops::before{top:-18px;background-image:radial-gradient(24px 24px at 24px 24px, var(--accent) 24px, transparent 25px)}
+    .scallops::after{bottom:-18px;background-image:radial-gradient(24px 24px at 0 0, var(--accent-2) 24px, transparent 25px)}
+    /* wrapper + nav */
+    .wrap{max-width:var(--maxw);margin:24px auto;padding:0 20px}
+    nav{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin:18px 0 10px}
+    nav a{background:var(--mint);padding:12px 24px;border-radius:999px;text-decoration:none;color:#000;font-weight:800;font-family:Montserrat,sans-serif}
+    nav a:hover{background:var(--mint-dark)}
+    /* title */
+    h1{font-family:Montserrat,Inter,sans-serif;font-weight:800;font-size:clamp(36px,6vw,60px);text-align:center;margin:8px 0 20px}
+    /* story card */
+    .bio-card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:24px 26px;
+      font-weight:800;
+      line-height:1.5;
+      box-shadow:0 8px 24px rgba(0,0,0,.08), inset 0 2px 0 rgba(255,255,255,.25);
+      margin:0 auto 28px;
+      max-width:1000px;
+    }
+    /* photo row */
+    .photo-row{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:36px;
+      justify-items:center;
+      max-width:1000px;
+      margin:0 auto 40px;
+    }
+    .photo-row img{
+      width:100%;
+      max-width:330px;       /* keeps them similar size like the screenshot */
+      height:auto;
+      border-radius:16px;
+      box-shadow:0 10px 24px rgba(0,0,0,.12);
+      display:block;
+    }
+    @media (max-width:1000px){ .photo-row{gap:28px} }
+    @media (max-width:860px){
+      .photo-row{grid-template-columns:1fr; gap:22px}
+      .bio-card{font-weight:800}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- top scallops -->
+  <div class="scallops"></div>
+
+  <div class="wrap">
+    </nav>
+    <nav aria-label="Main navigation">
+  <ul class="pill-nav">
+    <li><a href="index.html" aria-current="page">Home</a></li>
+    <li><a href="about.html">About Me</a></li>
+    <li><a href="involvement.html">Involvement</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="contact.html">Contact Me</a></li>
+  </ul>
+</nav>
+
+
+    <h1>ABOUT ME</h1>
+
+    <!-- green story card -->
+    <div class="bio-card">
+      Hi! I’m Lauren Schnapp, and I grew up in Westchester County, New York. From a young age,
+      I’ve been fascinated by the way financial decisions impact people’s lives and how thoughtful
+      planning can create freedom, opportunity, and peace of mind. That curiosity led me to the
+      University of Wisconsin–Madison, where I’m a junior majoring in Personal Finance and
+      Information Science with certificates in Business and Entrepreneurship. At UW–Madison, I’ve
+      developed a strong interest in wealth management because it blends analytical thinking with
+      relationship building which are two areas I really enjoy. I’m passionate about helping others feel
+      confident about their financial futures and hope to build a career where I can make a
+      meaningful difference. Outside of academics, I love staying active and connected. You’ll often
+      find me trying new workout classes, exploring new places on long walks, spending time with
+      friends and family, or hanging out with my dog, Da.
+    </div>
+
+    <!-- three photos -->
+    <div class="photo-row">
+      <!-- replace filenames to match your images folder names -->
+      <img src="images/friends.jpg" alt="Friends by the water">
+      <img src="images/dakota.jpg" alt="Lauren with her dog">
+      <img src="images/walk.jpg" alt="Walk in the neighborhood">
+    </div>
+  </div>
+
+  <!-- bottom scallops -->
+  <div class="scallops"></div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience • Lauren Schnapp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="scallops"></div>
+
+  <div class="wrap">
+    <nav>
+
+  <div class="scallops"></div>
+
+</body>
+</html> 

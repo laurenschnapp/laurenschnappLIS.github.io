@@ -1,0 +1,259 @@
+ :root {
+  --sage: #a4bcb1;
+  --sage-dark: #8da89d;
+  --sage-2: #9eb3a8;
+  --cream: #fcf8f5;
+  --accent: #b08cc9;
+  --ink: #1d1d1b;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--cream);
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+/* ============================= */
+/*  NAVIGATION */
+/* ============================= */
+.nav-pills {
+  text-align: center;
+  margin: 30px 0;
+}
+.pill {
+  display: inline-block;
+  background-color: var(--sage);
+  color: var(--ink);
+  font-weight: 700;
+  padding: 12px 25px;
+  border-radius: 50px;
+  margin: 0 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  transition: all 0.2s ease-in-out;
+}
+.pill:hover,
+.pill[aria-current="page"] {
+  background-color: var(--sage-dark);
+  transform: translateY(-2px);
+}
+
+/* ============================= */
+/*  HEADINGS */
+/* ============================= */
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+/* ============================= */
+/*  CARD SECTIONS */
+/* ============================= */
+.card {
+  background-color: var(--sage-2);
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  padding: 40px;
+  margin: 0 auto 60px auto;
+  max-width: 900px;
+}
+
+/* ============================= */
+/*  GRID LAYOUT */
+/* ============================= */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 30px;
+}
+@media (max-width: 800px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================= */
+/*  IMAGES */
+/* ============================= */
+.photo {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+/* ============================= */
+/*  RESUME BUTTON */
+/* ============================= */
+.resume-link {
+  display: inline-block;
+  background-color: var(--sage);
+  color: var(--ink);
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid var(--sage-dark);
+  transition: all 0.2s ease;
+}
+.resume-link:hover {
+  background-color: var(--sage-dark);
+  transform: translateY(-1px);
+}
+
+/* ============================= */
+/*  LISTS + DIVIDERS */
+/* ============================= */
+ul {
+  padding-left: 20px;
+  font-weight: 500;
+}
+.soft {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  margin: 20px 0;
+}
+
+/* ============================= */
+/*  TOP & BOTTOM PATTERN */
+/* ============================= */
+.pattern-bar {
+  height: 25px;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    var(--sage),
+    var(--sage) 20px,
+    var(--cream) 20px,
+    var(--cream) 40px
+  );
+  border-top: 5px solid var(--accent);
+  border-bottom: 5px solid var(--accent);
+}
+.pattern-bar.bottom {
+  margin-top: 60px;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #faf9f7;
+  color: #222;
+  font-family: Georgia, "Times New Roman", serif; /* same font for all pages */
+  line-height: 1.6;
+}/* -------- Pill Nav (matches your screenshot) -------- */
+html, body {
+  /* ensure same font on every page */
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.pill-nav{
+  list-style:none;
+  display:flex;
+  justify-content:space-between;      /* spreads the pills like your screenshot */
+  align-items:center;
+  gap:2rem;                           /* space between pills */
+  padding:1.25rem 1.5rem;
+  margin:0;
+}
+
+.pill-nav li{ margin:0; padding:0; }
+
+.pill-nav a{
+  display:inline-block;
+  padding:.95rem 2.25rem;
+  border-radius:999px;
+  background:#A7BAB2;                 /* sage/green-gray pill */
+  color:#1f1f1f;
+  text-decoration:none;
+  font-weight:800;                     /* bold like screenshot */
+  letter-spacing:.2px;
+  box-shadow:0 10px 22px rgba(0,0,0,.12);   /* soft drop shadow */
+  transition:transform .12s ease, background .2s ease, box-shadow .2s ease;
+}
+
+.pill-nav a:hover{
+  transform:translateY(-2px);
+  background:#9bb1a8;                 /* slightly darker on hover */
+  box-shadow:0 14px 26px rgba(0,0,0,.16);
+}
+
+/* active page (About Me) */
+.pill-nav a[aria-current="page"]{
+  background:#8FA59C;                 /* darker filled pill for current page */
+}
+/* ---------------- Pill Navigation ---------------- */
+.pill-nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1.25rem 1rem;
+  margin: 0 auto;
+}
+
+.pill-nav li { margin: 0; padding: 0; }
+
+.pill-nav a {
+  display: inline-block;
+  padding: 1rem 2.2rem;
+  border-radius: 999px;
+  background-color: #A7BAB2;          /* sage green */
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: 800;                   /* bold text */
+  /* title */
+    h1{font-family:Montserrat,Inter,sans-serif;font-weight:800;font-size:clamp(36px,6vw,60px);text-align:center;margin:8px 0 20px}
+  letter-spacing: .3px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  transition: all 0.2s ease;
+}
+.pill-nav a:hover {
+  background-color: #9caea8;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+}
+
+/* Active page (white border ring like screenshot) */
+.pill-nav a[aria-current="page"] {
+  background-color: #8da39a;
+  border: 3px solid #ffffff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+/* ===== About Section Layout (photo + text) ===== */
+.about-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-text p {
+  margin-bottom: 18px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.about-photo img {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Stack vertically on smaller screens */
+@media (max-width: 800px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-photo img {
+    margin: 20px auto;
+  }
+}
+
